@@ -1,0 +1,6 @@
+#!/usr/bin/python3
+import time
+while True:
+    print('meow' *10000 ,end,)
+    time.sleep(5)
+

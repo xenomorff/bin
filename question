@@ -1,0 +1,10 @@
+#!/usr/bin/python3
+
+print('Hello what is your name?')
+name = input('> ')
+print('Hello there ' + name)
+
+
+
+ 
+

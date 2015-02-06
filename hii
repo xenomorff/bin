@@ -1,0 +1,19 @@
+#!/usr/bin/python3
+import random
+
+print('hello')
+name = input('>')
+print('Why hello there ' + name)
+
+def q1():
+    print('Question one')
+    answer = ('>')
+
+    if answer == 'one':
+       print('right')
+    else:
+       print('wrong')
+
+
+questions = [q1,]
+
