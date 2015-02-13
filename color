@@ -1,7 +1,13 @@
 #!/usr/bin/python3
 
+yellow =' \033[0;33m'  
+idk = '\033[0;31m'
+reset = '\033[0m'
 
-print('hello')
+
+reset()
+print(yellow+  'hello'+idk+ +reset+' world')
+
 
 
 
