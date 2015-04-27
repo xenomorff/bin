@@ -1,0 +1,12 @@
+#!/usr/bin/env python3
+import time
+import colors as c
+
+print(c.reset)
+while True:
+    for count in range(2):
+        print(count,c.random_color()+"Wait a min")
+        time.sleep(1)
+    for count in range(1):
+        print(count,c.random_color()+"LOL")
+        time.sleep(1)

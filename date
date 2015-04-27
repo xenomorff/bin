@@ -1,0 +1,24 @@
+#!/usr/bin/env python3
+
+import time
+
+red = '\033[0;31m '
+blue = '\033[0;34m '
+magneta = '\033[0;35m'
+orange = '\033[1;31m'
+
+print(blue + 'Hello would you like the date or time?')
+date = input(red +'>> ').strip().lower()
+
+if date == 'time':
+    print(time.strftime(magneta + "%I:%M-%S"))
+elif date == 'date':
+    print(time.strftime(magneta + "%m/%d/%y"))
+elif date == 'both':
+    print(time.strftime(magneta + "%m/%d/%y"))
+    print(time.strftime(magneta +"%I:%M-%S"))
+
+time.sleep(.5)
+print(orange + 'Also your time zone is')
+print(time.strftime("%Z"))
+

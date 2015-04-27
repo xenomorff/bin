@@ -1,0 +1,9 @@
+#!/usr/bin/env python3
+
+import random
+
+print('Welcome')
+def q1():
+    print('Whats 9+10')
+    if answer == '19':
+        print('Correct!')

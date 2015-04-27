@@ -1,0 +1,16 @@
+#!/usr/bin/env python3
+
+print('First age')
+answer1 = int(input('> '))
+
+
+print('Second age')
+answer2 = int(input('> '))
+
+
+diffrence = answer1 - answer2
+
+print('The diffrence is')
+print(diffrence)
+
+

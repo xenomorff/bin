@@ -1,10 +1,17 @@
 #!/usr/bin/python3
+import random
+import colors as c
+import quiz as q
+score = 0
+print('Welcome to My quiz game')
 
-print('Hello what is your name?')
-name = input('> ')
-print('Hello there ' + name)
+questions = q.questions
+while questions:
+    question = random.choice(questions)
+    points = question() 
+    score+= points
+    if points:
+        questions.remove(question)
 
 
-
- 
-
+print("Congrats, score: ", score)

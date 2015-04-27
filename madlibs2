@@ -1,0 +1,49 @@
+#!/usr/bin/env python3
+
+import colors as c
+
+text ='''
+
+My "Dream Man" should, first of all be very {} and {}. He should have a
+physique like {}, a profile like {}, and the intelligence of a/an {}. 
+must be polite and must always remember to {} my {}, to tip his {} and
+to take my {} when crossing the street. He should move {}, have a/an {}
+voice, and should always dress {}. I would also like him to be a/an {}
+dancer, and when we are alone he should whisper {} nothings into my {}
+and hold my {} {}. I know a/an {} is hard to find. In fact the only one
+I can think of is {}
+'''
+
+
+words = [  
+   ' ADJECTIVE',       
+   ' ADJECTIVE',       
+   ' CELEBRITY',       
+   ' CELEBRITY',       
+   ' ANIMAL',      
+   ' VERB',        
+   ' NOUN',
+   ' NOUN',        
+   ' PART OF BODY',       
+   ' ADVERB',      
+   ' ADJECTIVE',       
+   ' ADVERB',      
+   ' ADJECTIVE',       
+   ' ADJECTIVE',   
+   ' PART OF BODY',    
+   ' ADJECTIVE',       
+   ' NOUN',        
+   ' NOUN',        
+   ' PERSON IN ROOM(MALE)'
+]
+
+answers = []
+
+print(c.clear)
+
+for word in words:
+    answer = input(word + '> ')
+    print(c.reset,end ='')
+    answers.append(answer)
+
+print(text.format(*answers))

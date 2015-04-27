@@ -1,0 +1,6 @@
+#!/usr/bin/env python3
+
+import colors as r
+
+print(r.clear)
+print(r.random_color() + 'hello')
