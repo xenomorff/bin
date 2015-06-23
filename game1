@@ -1,0 +1,67 @@
+#!/usr/bin/env python3
+
+import colors as c
+import time
+
+
+time.sleep(.5)
+print('You wake up in a dark room')
+time.sleep(.5)
+print('you choose to..')
+time.sleep(.5)
+print('(A) -leave the room-')
+print('(B) -yell for someone-')
+print('(C) -TODO-')
+
+while True:
+    try:
+        intro = input(">>> ").strip().lower()
+
+        if intro == 'a':
+            print('You leave the room')
+            break
+        if intro == 'b':
+            print('You get no responce..')
+
+        if intro == 'c':
+            print('TODO')
+
+#        else:
+#            print('~NOT-VALID~')
+
+    except KeyboardInterrupt:
+        print(' no one leaves..')
+
+time.sleep(.5)
+print('continue?')
+time.sleep(.5)
+print('y / n')
+
+while True:
+    introo = input('>>> ')
+    
+    if introo == 'y':
+        break
+    if introo == 'n':
+        print('Bye')
+        exit()
+
+time.sleep(.5)
+print('You leave the room to a short hallway with a door on the right')
+time.sleep(1.5)
+print('You choose to..')
+time.sleep(.5)
+print('(A)')
+print('(B)')
+print('(C)')
+
+while True:
+    middle = input('>>> ')
+
+    if middle == 'a':
+        break
+    if middle == 'b':
+        break
+    if middle == 'c':
+        break
+
